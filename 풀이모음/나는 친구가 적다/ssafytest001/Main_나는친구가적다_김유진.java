@@ -21,7 +21,9 @@ public class Main_나는친구가적다_김유진 {
         String input = br.readLine().replaceAll("[0-9]", "");
         Pattern p = Pattern.compile(br.readLine());
         Matcher m = p.matcher(input);
-        System.out.println(m.find()?"1":"0");
-
+        if(m.find())
+            System.out.println("1");
+        else
+            System.out.println("0");    
     }
 }
